@@ -14148,3 +14148,64 @@ Connecting to database specified by database.yml
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00], ["description", "Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers.\n"], ["image", "hobbit.jpg"], ["name", "The Hobbit"], ["updated_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00]]
   [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-02-21 07:10:14 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/_movie.html.erb (6.7ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = 1[0m
+  [1m[35mReview Load (2.7ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = 1
+  Rendered movies/show.html.erb within layouts/application (190.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 388ms (Views: 278.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 07:10:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 07:10:16 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
