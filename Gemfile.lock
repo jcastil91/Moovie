@@ -70,6 +70,7 @@ GEM
     omniauth-oauth2 (1.0.2)
       oauth2 (~> 0.6.0)
       omniauth (~> 1.0)
+    pg (0.14.1)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
@@ -129,6 +130,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   omniauth-facebook
+  pg
   rails (= 3.2.6)
   ransack
   sass-rails (~> 3.2.3)
