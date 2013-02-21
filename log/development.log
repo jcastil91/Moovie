@@ -14106,3 +14106,45 @@ Connecting to database specified by database.yml
   [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120623190101')
   [1m[36m (4.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130220030925')[0m
   [1m[35m (1.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130220215117')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (61.4ms)[0m  [1mINSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:41:40 UTC +00:00], ["description", "Despite his tarnished reputation after the events of The Dark Knight, in which he took the rap for Dent's crimes, Batman feels compelled to intervene to assist the city and its police force which is struggling to cope with Bane's plans to destroy the city.\n"], ["image", "dark_knight_rises.jpg"], ["name", "The Dark Knight Rises"], ["updated_at", Thu, 21 Feb 2013 11:41:40 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:41:40 UTC +00:00], ["description", "Nick Fury is director of S.H.I.E.L.D, an international peace keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.\n"], ["image", "avengers.jpg"], ["name", "The Avengers"], ["updated_at", Thu, 21 Feb 2013 11:41:40 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:45:16 UTC +00:00], ["description", "Despite his tarnished reputation after the events of The Dark Knight, in which he took the rap for Dent's crimes, Batman feels compelled to intervene to assist the city and its police force which is struggling to cope with Bane's plans to destroy the city.\n"], ["image", "dark_knight_rises.jpg"], ["name", "The Dark Knight Rises"], ["updated_at", Thu, 21 Feb 2013 11:45:16 UTC +00:00]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:45:16 UTC +00:00], ["description", "Nick Fury is director of S.H.I.E.L.D, an international peace keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.\n"], ["image", "avengers.jpg"], ["name", "The Avengers"], ["updated_at", Thu, 21 Feb 2013 11:45:16 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00], ["description", "Despite his tarnished reputation after the events of The Dark Knight, in which he took the rap for Dent's crimes, Batman feels compelled to intervene to assist the city and its police force which is struggling to cope with Bane's plans to destroy the city.\n"], ["image", "dark_knight_rises.jpg"], ["name", "The Dark Knight Rises"], ["updated_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00], ["description", "Nick Fury is director of S.H.I.E.L.D, an international peace keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.\n"], ["image", "avengers.jpg"], ["name", "The Avengers"], ["updated_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "Excellent movie with a fun sense of humor. I especially enjoyed the interactions between the characters. Some of the action sequences were a little too long for my tastes.\n"], ["created_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00], ["movie_id", 56], ["name", "John"], ["rating", 5], ["updated_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00], ["user_id", 1]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00], ["description", "An alien criminal kills the young Agent K in 1969, altering the timeline, changing the Agency and placing the Earth in danger. Veteran Agent J (Will Smith) must travel back in time to 1969 to before the murder and work with the young Agent K (Josh Brolin) to save him, the Agency, the Earth and humanity itself.\n"], ["image", "mib3.jpg"], ["name", "Men in Black 3"], ["updated_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00], ["description", "Like most teenagers, Peter is trying to figure out who he is and how he got to be the person he is today. Peter is also finding his way with his first high school crush, Gwen Stacy, and together, they struggle with love, commitment, and secrets.\n"], ["image", "spiderman.jpg"], ["name", "The Amazing Spider-Man"], ["updated_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("average_rating", "created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["average_rating", nil], ["created_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00], ["description", "Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers.\n"], ["image", "hobbit.jpg"], ["name", "The Hobbit"], ["updated_at", Thu, 21 Feb 2013 11:45:57 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m

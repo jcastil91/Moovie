@@ -6,7 +6,7 @@ movie = Movie.create! name: "The Avengers", image: "avengers.jpg", description: 
 Nick Fury is director of S.H.I.E.L.D, an international peace keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.
 EOS
 
-movie.reviews.create! name: "Frank", rating: 5, content: <<-EOS
+movie.reviews.create! name: "John", rating: 5, user_id: 1, movie_id: 1, content: <<-EOS
 Excellent movie with a fun sense of humor. I especially enjoyed the interactions between the characters. Some of the action sequences were a little too long for my tastes.
 EOS
 
