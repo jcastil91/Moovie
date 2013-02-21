@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  image: MyString
+  name: Dark knight Rises
+  image: dark_knight_rises.jpg
   description: MyText
 
 two:
-  name: MyString
-  image: MyString
-  description: MyText
+  name: The Avengers
+  image: Avengers.jpg
+  description: Text2

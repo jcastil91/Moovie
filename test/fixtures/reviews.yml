@@ -4,10 +4,12 @@ one:
   name: MyString
   rating: 1
   content: MyText
-  movie: 
-
+  movie_id: 1
+  user_id: 1
+  
 two:
   name: MyString
   rating: 1
   content: MyText
-  movie: 
+  movie_id: 2
+  user_id: 1
