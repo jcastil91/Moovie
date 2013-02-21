@@ -21,8 +21,3 @@ EOS
 Movie.create! name: "The Hobbit", image: "hobbit.jpg", description: <<-EOS
 Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers.
 EOS
-
-Artist.create! name: "Christian Bale", image: "http://upload.wikimedia.org/wikipedia/commons/0/0d/Christian_Bale_2009.jpg", 
-movie_id: 1, bio: <<-EOS 
-The 10th Anniversary issue of "Entertainment Weekly" crowned Christian Bale as one of the "Top 8 Most Powerful Cult Figures" of the past decade, citing his incredible and legendary cult status on the Internet. 
-EOS
