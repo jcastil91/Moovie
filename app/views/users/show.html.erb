@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Show:</b>
+  <%= @user.name %>
+</p>
+
+<div id="reviews">
+  <h2><%= pluralize @user.reviews.size, "Review" %></h2>
+
+  <% @user.reviews.each do |review| %>
+    <div class="review">
+      <div class="movietitle"> <%= Movie.find(review.movie_id).name %> </div>
+      <div class="content"><%= review.content %></div>
+      <em>
+        &mdash;
+        <%= @user.name %> gave it
+        <strong><%= pluralize review.rating, "star" %></strong>
+      </em>
+    </div>
+  <% end %>
+</div>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+  attr_accessible :name
+  attr_protected :provider, :uid, :oauth_token, :oauth_expires_at, :created_at,
+    :updated_at 
+  has_many :reviews
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
       user.provider = auth.provider
@@ -9,4 +13,5 @@ class User < ActiveRecord::Base
       user.save!
     end
   end
+
 end

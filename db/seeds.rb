@@ -23,6 +23,6 @@ Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor 
 EOS
 
 Artist.create! name: "Christian Bale", image: "http://upload.wikimedia.org/wikipedia/commons/0/0d/Christian_Bale_2009.jpg", 
-bio: <<-EOS 
+movie_id: 1, bio: <<-EOS 
 The 10th Anniversary issue of "Entertainment Weekly" crowned Christian Bale as one of the "Top 8 Most Powerful Cult Figures" of the past decade, citing his incredible and legendary cult status on the Internet. 
 EOS

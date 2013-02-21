@@ -2,6 +2,11 @@
   <%= render @movie %>
 </div>
 
+<p>
+  <b>Title:</b>
+  <%=h @user.name %>
+</p>
+
 <div id="reviews">
   <h2><%= pluralize @movie.reviews.size, "Review" %></h2>
 
@@ -23,8 +28,8 @@
       <%= f.select :rating, 1..5 %>
     </div>
     <div class="field">
-      <%= f.label :name, "Your name" %>
-      <%= f.text_field :name %>
+      <%= f.label :name, @user.name %>
+      <%= f.hidden_field :user_id, :value => @user.id %>
     </div>
     <div class="field">
       <%= f.text_area :content, rows: 5, cols: 40 %>

@@ -11,12 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130220020353) do
+ActiveRecord::Schema.define(:version => 20130220215117) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
     t.string   "image"
     t.string   "bio"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "movie_id"
+  end
+
+  create_table "movieartists", :force => true do |t|
+    t.integer  "movie_id"
+    t.integer  "artist_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -36,6 +44,7 @@ ActiveRecord::Schema.define(:version => 20130220020353) do
     t.integer  "movie_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
 
   add_index "reviews", ["movie_id"], :name => "index_reviews_on_movie_id"
