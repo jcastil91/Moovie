@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130220215117) do
+ActiveRecord::Schema.define(:version => 20130221071533) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
@@ -33,8 +33,9 @@ ActiveRecord::Schema.define(:version => 20130220215117) do
     t.string   "name"
     t.string   "image"
     t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.float    "average_rating"
   end
 
   create_table "reviews", :force => true do |t|

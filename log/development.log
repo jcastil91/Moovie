@@ -12263,3 +12263,1438 @@ Served asset /avengers.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 01:00:28 -0500
 Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 01:52:39 -0500
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 53ms
+
+NoMethodError (undefined method `search' for #<Class:0x007fccd5496480>):
+  app/controllers/movies_controller.rb:3:in `index'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.6ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 01:55:58 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.erb within layouts/application (113.9ms)
+Completed 500 Internal Server Error in 210ms
+
+ActionView::Template::Error (undefined method `link_to_add_fields' for #<#<Class:0x007fbed51ad060>:0x007fbed51e6608>):
+    4:   <%= f.condition_fields do |c| %>
+    5:     <%= render "condition_fields", f: c %>
+    6:   <% end %>
+    7:   <p><%= link_to_add_fields "Add Conditions", f, :condition %></p>
+    8:   <div class="field">
+    9:     Sort:
+    10:     <%= f.sort_fields do |s| %>
+  app/views/movies/index.html.erb:7:in `block in _app_views_movies_index_html_erb___4285938697142717169_70228798868580'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb___4285938697142717169_70228798868580'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.1ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 02:01:12 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/_movie.html.erb (112.3ms)
+  Rendered movies/index.html.erb within layouts/application (164.3ms)
+  [1m[36mUser Load (52.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 514ms (Views: 459.9ms | ActiveRecord: 53.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /layout.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /reviews.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /movies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /jquery.js - 304 Not Modified (55ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /facebook.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /reviews.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /movies.js - 304 Not Modified (68ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:13 -0500
+Served asset /application.js - 304 Not Modified (54ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:01:14 -0500
+Served asset /avengers.jpg - 304 Not Modified (70ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:01:14 -0500
+Served asset /mib3.jpg - 304 Not Modified (43ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:01:14 -0500
+Served asset /hobbit.jpg - 304 Not Modified (19ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:01:14 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (10ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:01:14 -0500
+Served asset /spiderman.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&q%5Bname_cont%5D=dark+knight&commit=Search" for 127.0.0.1 at 2013-02-21 02:01:23 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"dark knight"}, "commit"=>"Search"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE ("movies"."name" LIKE '%dark knight%')
+  Rendered movies/_movie.html.erb (37.5ms)
+  Rendered movies/index.html.erb within layouts/application (141.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 172ms (Views: 165.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:01:24 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&q%5Bname_cont%5D=dark+knight&commit=Search" for 127.0.0.1 at 2013-02-21 02:08:09 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"dark knight"}, "commit"=>"Search"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE ("movies"."name" LIKE '%dark knight%')
+  Rendered movies/_movie.html.erb (13.7ms)
+  Rendered movies/index.html.erb within layouts/application (29.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 95ms (Views: 89.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:10 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 02:08:14 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/_movie.html.erb (102.3ms)
+  Rendered movies/index.html.erb within layouts/application (120.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 140ms (Views: 138.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:08:15 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?q%5Bs%5D=name+asc" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"name asc"}}
+  [1m[35mMovie Load (1.1ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."name" ASC
+  Rendered movies/_movie.html.erb (73.5ms)
+  Rendered movies/index.html.erb within layouts/application (90.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 107ms (Views: 104.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:20 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:08:21 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:08:21 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:08:21 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:08:21 -0500
+Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:21 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?q%5Bs%5D=name+desc" for 127.0.0.1 at 2013-02-21 02:08:23 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"name desc"}}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."name" DESC
+  Rendered movies/_movie.html.erb (113.1ms)
+  Rendered movies/index.html.erb within layouts/application (129.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 145ms (Views: 142.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:23 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:23 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:23 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:23 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /avengers.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:08:24 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?q%5Bs%5D=name+asc" for 127.0.0.1 at 2013-02-21 02:08:25 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"name asc"}}
+  [1m[35mMovie Load (1.1ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."name" ASC
+  Rendered movies/_movie.html.erb (111.6ms)
+  Rendered movies/index.html.erb within layouts/application (127.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 143ms (Views: 141.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:25 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:26 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?q%5Bs%5D=updated_at+asc" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"updated_at asc"}}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" ASC
+  Rendered movies/_movie.html.erb (112.2ms)
+  Rendered movies/index.html.erb within layouts/application (128.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 144ms (Views: 141.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:08:28 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?q%5Bs%5D=updated_at+desc" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"updated_at desc"}}
+  [1m[35mMovie Load (1.1ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC
+  Rendered movies/_movie.html.erb (111.5ms)
+  Rendered movies/index.html.erb within layouts/application (127.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 146ms (Views: 144.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /hobbit.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:08:31 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?q%5Bs%5D=updated_at+asc" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"updated_at asc"}}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" ASC
+  Rendered movies/_movie.html.erb (67.6ms)
+  Rendered movies/index.html.erb within layouts/application (84.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 144ms (Views: 141.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:08:33 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?q%5Bs%5D=name+asc" for 127.0.0.1 at 2013-02-21 02:08:34 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"name asc"}}
+  [1m[35mMovie Load (1.1ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."name" ASC
+  Rendered movies/_movie.html.erb (66.5ms)
+  Rendered movies/index.html.erb within layouts/application (82.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 99ms (Views: 97.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:08:35 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20120620203751)
+Migrating to CreateReviews (20120620204132)
+Migrating to CreateUsers (20120623190101)
+Migrating to AddMoveIdColumnToArtists (20130220030925)
+Migrating to AddUserIdColumnToReviews (20130220215117)
+Migrating to AddAverageRatingColumnToMovies (20130221071533)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "movies" ADD "average_rating" float
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130221071533')[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.6ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("artists")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("movieartists")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("movies")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("reviews")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_reviews_on_movie_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/movies?q%5Bs%5D=name+desc" for 127.0.0.1 at 2013-02-21 02:24:25 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"name desc"}}
+  [1m[35mMovie Load (1.2ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."name" DESC
+  Rendered movies/_movie.html.erb (118.8ms)
+  Rendered movies/index.html.erb within layouts/application (162.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 262ms (Views: 255.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:24:27 -0500
+Served asset /hobbit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:24:27 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:24:27 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:24:27 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:24:27 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies?q%5Bs%5D=updated_at+asc" for 127.0.0.1 at 2013-02-21 02:24:28 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"q"=>{"s"=>"updated_at asc"}}
+  [1m[35mMovie Load (1.1ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" ASC
+  Rendered movies/_movie.html.erb (112.2ms)
+  Rendered movies/index.html.erb within layouts/application (129.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 146ms (Views: 143.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /avengers.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /spiderman.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hobbit.jpg" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /hobbit.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/mib3.jpg" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /mib3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:24:29 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/_movie.html.erb (3.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = 1[0m
+  Rendered movies/show.html.erb within layouts/application (367.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 388ms (Views: 383.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:24:31 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:24:41 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"ad"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (32.5ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "ad"], ["created_at", Thu, 21 Feb 2013 07:24:41 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:24:41 UTC +00:00], ["user_id", 1]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 43ms
+
+NoMethodError (undefined method `average' for #<Review:0x007fbed2d8fcc8>):
+  app/controllers/reviews_controller.rb:5:in `create'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.2ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:27:02 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"ad"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "ad"], ["created_at", Thu, 21 Feb 2013 07:27:02 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:27:02 UTC +00:00], ["user_id", 1]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 99ms
+
+NoMethodError (undefined method `average' for #<Review:0x007fbed3c370f0>):
+  app/controllers/reviews_controller.rb:6:in `create'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:28:36 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"ad"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "ad"], ["created_at", Thu, 21 Feb 2013 07:28:36 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:28:36 UTC +00:00], ["user_id", 1]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 64ms
+
+NoMethodError (undefined method `average' for #<Review:0x007fbed2ac82b0>):
+  app/controllers/reviews_controller.rb:5:in `create'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:28:43 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"ad"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["content", "ad"], ["created_at", Thu, 21 Feb 2013 07:28:43 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:28:43 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `average' for #<Review:0x007fbed299be78>):
+  app/controllers/reviews_controller.rb:5:in `create'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.2ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.3ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:29:17 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"adfsd"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "adfsd"], ["created_at", Thu, 21 Feb 2013 07:29:17 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:29:17 UTC +00:00], ["user_id", 1]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `average' for #<Review:0x007fbed2a1b628>):
+  app/controllers/reviews_controller.rb:5:in `create'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.5ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.8ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:29:39 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"adfsd"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["content", "adfsd"], ["created_at", Thu, 21 Feb 2013 07:29:39 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:29:39 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 54ms
+
+NoMethodError (undefined method `average' for #<Review:0x007fbed27665e0>):
+  app/controllers/reviews_controller.rb:5:in `create'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.8ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:32:42 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"adfsd"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "adfsd"], ["created_at", Thu, 21 Feb 2013 07:32:42 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:32:42 UTC +00:00], ["user_id", 1]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (26.2ms)[0m  [1mSELECT AVG("reviews"."rating") AS avg_id FROM "reviews" WHERE (movie_id = '1')[0m
+Completed 500 Internal Server Error in 161ms
+
+NoMethodError (private method `update' called for #<Movie:0x007fbed2055800>):
+  app/controllers/reviews_controller.rb:6:in `create'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.2ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:35:34 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"adfsd"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["content", "adfsd"], ["created_at", Thu, 21 Feb 2013 07:35:34 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:35:34 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT AVG("reviews"."rating") AS avg_id FROM "reviews" WHERE (movie_id = '1')
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 56ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: average_rating):
+  app/controllers/reviews_controller.rb:6:in `create'
+
+
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.1ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /Users/Jose/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.4ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"3", "user_id"=>"1", "content"=>"adfsd"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["content", "adfsd"], ["created_at", Thu, 21 Feb 2013 07:35:55 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 3], ["updated_at", Thu, 21 Feb 2013 07:35:55 UTC +00:00], ["user_id", 1]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT AVG("reviews"."rating") AS avg_id FROM "reviews" WHERE (movie_id = '1')
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "movies" SET "average_rating" = 2.047619047619047, "updated_at" = '2013-02-21 07:35:55.562455' WHERE "movies"."id" = 1[0m
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 195ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/_movie.html.erb (1.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = 1
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = 1[0m
+  Rendered movies/show.html.erb within layouts/application (26.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 73ms (Views: 41.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 02:35:55 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 02:35:56 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 03:10:47 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"1", "user_id"=>"1", "content"=>"another"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "another"], ["created_at", Thu, 21 Feb 2013 08:10:47 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 1], ["updated_at", Thu, 21 Feb 2013 08:10:47 UTC +00:00], ["user_id", 1]]
+  [1m[35m (41.1ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT AVG("reviews"."rating") AS avg_id FROM "reviews" WHERE (movie_id = '1')[0m
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "movies" SET "average_rating" = 2.0, "updated_at" = '2013-02-21 08:10:47.912187' WHERE "movies"."id" = 1
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = 1 LIMIT 1
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 59ms (ActiveRecord: 44.8ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-02-21 03:10:47 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/_movie.html.erb (1.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = 1[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = 1
+  Rendered movies/show.html.erb within layouts/application (22.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 03:10:48 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2013-02-21 03:12:13 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PT7ZA4FAyXgHh87cTNMqMFiTHBC3sZRm5hq7JT//jh8=", "review"=>{"rating"=>"5", "user_id"=>"1", "content"=>"2.1"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "reviews" ("content", "created_at", "movie_id", "name", "rating", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["content", "2.1"], ["created_at", Thu, 21 Feb 2013 08:12:13 UTC +00:00], ["movie_id", 1], ["name", nil], ["rating", 5], ["updated_at", Thu, 21 Feb 2013 08:12:13 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT AVG("reviews"."rating") AS avg_id FROM "reviews" WHERE (movie_id = '1')
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "movies" SET "average_rating" = 2.130434782608696, "updated_at" = '2013-02-21 08:12:13.956945' WHERE "movies"."id" = 1[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 20ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-02-21 03:12:13 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/_movie.html.erb (1.5ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = 1
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = 1[0m
+  Rendered movies/show.html.erb within layouts/application (23.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dark_knight_rises.jpg" for 127.0.0.1 at 2013-02-21 03:12:14 -0500
+Served asset /dark_knight_rises.jpg - 304 Not Modified (0ms)
