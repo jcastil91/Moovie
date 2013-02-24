@@ -18,7 +18,6 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @user }
@@ -27,15 +26,7 @@ class UsersController < ApplicationController
 
   # GET /users/new
   # GET /users/new.json
-  def new
-    @user = User.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @user }
-    end
-  end
-
+  
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
@@ -77,11 +68,18 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user = User.find(params[:id])
-    @user.destroy
-
+    
     respond_to do |format|
-      format.html { redirect_to users_url }
-      format.json { head :no_content }
+      if session[:user_id] == @user.id
+    	session[:user_id] = nil
+        @user.destroy
+        format.html { redirect_to :action => 'index', notice: "account destroyed" }
+        format.json { head :no_content }
+        
+      else
+        format.html {redirect_to :back, notice: "You may only destroy your own account"}
+        format.json { head :no_content }
+      end
     end
   end
 end
